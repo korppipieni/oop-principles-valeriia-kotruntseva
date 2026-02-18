@@ -1,4 +1,31 @@
 package university;
 
 public class Student {
+
+    protected String firstName;
+    protected String lastName;
+    protected String group;
+    protected double averageMark;
+
+    public Student(String firstName, String lastName, String group, double averageMark){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.group = group;
+        this.averageMark = averageMark;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getScholarship(){
+        if (averageMark == 5.0){
+            return 5000;
+        } else {
+            return 3000;
+        }
+    }
 }
